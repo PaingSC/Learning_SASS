@@ -3,6 +3,7 @@
 body {
   color: c.$gray-ligh-color;
   background-color: c.$primary-color-;
+  font-size: 20px;
 }
 .container {
   max-width: 840px;
@@ -35,7 +36,4 @@ body {
       @include card($theme: c.$purpl-color);
     }
   }
-}
-body {
-  font-size: 15px;
 }

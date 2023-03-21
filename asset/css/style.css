@@ -3,12 +3,9 @@ html {
 }
 
 body {
-  padding: 50px;
-}
-
-body {
   color: #d3dce6;
   background-color: #fff;
+  font-size: 20px;
 }
 
 .container {
@@ -37,10 +34,6 @@ body {
 .hdr-navi ul:nth-child(2) {
   background: #7e5bef;
   box-shadow: 0 0 1px rgba(126, 91, 239, 0.25);
-}
-
-body {
-  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
