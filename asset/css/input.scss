@@ -1,0 +1,41 @@
+@use 'color' as c;
+
+body {
+  color: c.$gray-ligh-color;
+  background-color: c.$primary-color-;
+}
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+@mixin card($theme: c.$gray-dar-color) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, 0.25);
+}
+.hdr-navi {
+  ul {
+    margin: 0;
+    padding: 30px 20px;
+    background-color: c.$primary-color-;
+    margin-bottom: 30px;
+    @include card;
+
+    li {
+      color: c.$secondary-color-;
+      padding: 10px;
+      background-color: var(--v-color);
+      color: c.$secondary-color-;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &:nth-child(2) {
+      @include card($theme: c.$purpl-color);
+    }
+  }
+}
+body {
+  font-size: 15px;
+}
